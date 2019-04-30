@@ -30,9 +30,9 @@ class TreeNode extends React.Component {
           </select> 
         }
         { this.props.data.optionsType === 'input' && 
-          <p>Input: <input /></p>
+          <input />
         }
-        { this.state.selection && <TreeNode data={this.getChildTree()} /> }
+        { this.state.selection && this.getChildTree() && <TreeNode data={this.getChildTree()} /> }
       </div>
     );
   }
