@@ -1,0 +1,16 @@
+{
+    "name": "Node A",
+    "nodes": [
+        {
+           "name": "Node A-A"
+       },
+       {
+            "name": "Node A-B",
+            "nodes": [
+            {
+                "name": "Node A-B-A"
+            }
+         ]
+       }
+    ]
+}
