@@ -23,11 +23,14 @@ class TreeNode extends React.Component {
     return (
       <div className="node">
         TreeNode
-        { this.props.data.optionsType === 'dropdown' && 
+        { this.props.data.optionsType === 'select' && 
           <select onChange={e => this.dropdownChanged(e)}>
             <option>-- No Selection --</option>
             { this.props.data.options.map(o => <option value={o.value}>{o.display}</option>) }
           </select> 
+        }
+        { this.props.data.optionsType === 'input' && 
+          <p>Input: <input /></p>
         }
         { this.state.selection && <TreeNode data={this.getChildTree()} /> }
       </div>

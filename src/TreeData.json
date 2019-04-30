@@ -1,63 +1,64 @@
 {
-    "optionsType": "dropdown", 
+    "optionsType": "select", 
     "options": 
     [
       {
           "display": "Member Status",
           "value": "member_status",
-          "optionsType": "dropdown", 
+          "optionsType": "select", 
           "options": 
           [
-
-                      {
-                          "display": "Is",
-                          "value": "is",
-                          "optionsType": "dropdown",
-                          "options": [
-                              {
-                                  "display": "Active",
-                                  "value": "active",
-                                  "options": []
-                              },
-                              {
-                                  "display": "Inactive",
-                                  "value": "inactive",
-                                  "options": []
-                              }
-                          ]
-                      },
-                      {
-                          "display": "Is Not",
-                          "value": "is_not",
-                          "optionsType": "dropdown",
-                          "options": [
-                              {
-                                  "display": "Active",
-                                  "value": "active",
-                                  "options": []
-                              },
-                              {
-                                  "display": "Inactive",
-                                  "value": "inactive",
-                                  "options": []
-                              }
-                          ]
-                      }
+                {
+                    "display": "Is",
+                    "value": "is",
+                    "optionsType": "select",
+                    "options": [
+                        {
+                            "display": "Active",
+                            "value": "active",
+                            "options": []
+                        },
+                        {
+                            "display": "Inactive",
+                            "value": "inactive",
+                            "options": []
+                        }
+                    ]
+                },
+                {
+                    "display": "Is Not",
+                    "value": "is_not",
+                    "optionsType": "select",
+                    "options": [
+                        {
+                            "display": "Active",
+                            "value": "active",
+                            "options": []
+                        },
+                        {
+                            "display": "Inactive",
+                            "value": "inactive",
+                            "options": []
+                        }
+                    ]
+                }
           ]
       },
       {
           "display": "Member Email",
           "value": "member_email",
-          "optionsType": "dropdown",
+          "optionsType": "select",
           "options":
           [
               {
                   "display": "Starts With",
-                  "optionsType": "text_input", 
+                  "value": "starts_with",
+                  "optionsType": "input", 
                   "options": []
               },
               {
                   "display": "Was Entered",
+                  "value": "was_entered",
                   "optionsType": "none",
                   "options": []
               }
