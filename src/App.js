@@ -7,6 +7,7 @@ import TreeNode from './TreeNode';
 function App() {
   return (
     <div className="App">
+      App
       <TreeNode data={data} />
     </div>
   );

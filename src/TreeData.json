@@ -1,16 +1,67 @@
 {
-    "name": "Node A",
-    "nodes": [
-        {
-           "name": "Node A-A"
-       },
-       {
-            "name": "Node A-B",
-            "nodes": [
-            {
-                "name": "Node A-B-A"
-            }
-         ]
-       }
+    "optionsType": "dropdown", 
+    "options": 
+    [
+      {
+          "display": "Member Status",
+          "value": "member_status",
+          "optionsType": "dropdown", 
+          "options": 
+          [
+
+                      {
+                          "display": "Is",
+                          "value": "is",
+                          "optionsType": "dropdown",
+                          "options": [
+                              {
+                                  "display": "Active",
+                                  "value": "active",
+                                  "options": []
+                              },
+                              {
+                                  "display": "Inactive",
+                                  "value": "inactive",
+                                  "options": []
+                              }
+                          ]
+                      },
+                      {
+                          "display": "Is Not",
+                          "value": "is_not",
+                          "optionsType": "dropdown",
+                          "options": [
+                              {
+                                  "display": "Active",
+                                  "value": "active",
+                                  "options": []
+                              },
+                              {
+                                  "display": "Inactive",
+                                  "value": "inactive",
+                                  "options": []
+                              }
+                          ]
+                      }
+          ]
+      },
+      {
+          "display": "Member Email",
+          "value": "member_email",
+          "optionsType": "dropdown",
+          "options":
+          [
+              {
+                  "display": "Starts With",
+                  "optionsType": "text_input", 
+                  "options": []
+              },
+              {
+                  "display": "Was Entered",
+                  "optionsType": "none",
+                  "options": []
+              }
+          ]
+      }
     ]
-}
+  }
